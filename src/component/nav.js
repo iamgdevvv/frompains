@@ -16,10 +16,10 @@ const nav = `
             </ul>
         </div>
         <div class="items-center w-auto hidden sm:flex">		
-            <a class="inline-block text-gray-500 hover:text-white text-center p-4 avatar w-10 h-10 sm:w-16 sm:h-16" href="https://instagram.com/frompains">
+            <a class="inline-block text-gray-500 hover:text-white text-center p-4 avatar w-10 h-10 sm:w-16 sm:h-16" href="https://instagram.com/iamgdev" target="_blank">
                 <i data-eva="image-2" class="w-full h-full fill-current"></i>
             </a>
-            <a class="inline-block text-gray-500 hover:text-white text-center p-4 avatar w-10 h-10 sm:w-16 sm:h-16" href="https://github.com/hellogerafis/frompains">
+            <a class="inline-block text-gray-500 hover:text-white text-center p-4 avatar w-10 h-10 sm:w-16 sm:h-16" href="https://github.com/iamgdevvv/frompains" target="_blank">
                 <i data-eva="github" class="w-full h-full fill-current"></i>
             </a>
         </div>

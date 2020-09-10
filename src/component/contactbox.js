@@ -6,21 +6,21 @@ const contactbox = `
                 <p class="break-normal font-normal text-base md:text-xl mb-4">Here's the source data</p>
                 <ul class="grid grid-cols-1 gap-4 text-sm">
                     <li>
-                        <a href="" class="flex items-center hover:text-teal-500 duration-300">
+                        <a href="https://programming-quotes-api.herokuapp.com/" target="_blank" class="flex items-center hover:text-teal-500 duration-300">
                             <i data-eva="globe" class="w-12 h-12 fill-current"></i>
                             <span class="w-10/12 break-words pl-4">https://programming-quotes-api.herokuapp.com/</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex items-center hover:text-teal-500 duration-300">
+                        <a href="https://github.com/skolakoda/programming-quotes-api" target="_blank" class="flex items-center hover:text-teal-500 duration-300">
                             <i data-eva="github" class="w-12 h-12 fill-current"></i>
                             <span class="w-10/12 break-words pl-4">https://github.com/skolakoda/programming-quotes-api</span>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex items-center hover:text-teal-500 duration-300">
+                        <a href="https://github.com/iamgdevvv/frompains" target="_blank" class="flex items-center hover:text-teal-500 duration-300">
                             <i data-eva="github" class="w-12 h-12 fill-current"></i>
-                            <span class="w-10/12 break-words pl-4">https://github.com/hellogerafis/frompains</span>
+                            <span class="w-10/12 break-words pl-4">https://github.com/iamgdevvv/frompains</span>
                         </a>
                     </li>
                 </ul>
