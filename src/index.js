@@ -1,3 +1,4 @@
+import 'regenerator-runtime';
 import compHeader from './component/header';
 import compNav from './component/nav';
 import compContactBox from './component/contactbox';
