@@ -45,7 +45,7 @@ class listingPagination extends HTMLElement {
 			window.scrollTo({
 				'behavior': 'smooth',
 				'left': 0,
-				'top': 0
+				'top': document.getElementById("navigation").offsetTop
 			});
 		})
 	}
