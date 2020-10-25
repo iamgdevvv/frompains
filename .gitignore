@@ -46,6 +46,12 @@ build/Release
 # Dependency directories
 node_modules/
 
+# Briefing directories
+_BRIEFING/
+
+# dist directories
+dist/
+
 # Optional npm cache directory
 .npm
 

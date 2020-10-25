@@ -8,19 +8,15 @@ import compListingQuote from './component/listing-quote';
 import compPaginationQuote from './component/pagination-quote';
 import compModalShare from './component/modal-share';
 
-import './assets/css/style.css';
-import './assets/css/app.css';
-import * as eva from 'eva-icons';
-
 const header = document.getElementById("header");
-header.classList.add("w-full", "m-0", "p-0", "bg-cover", "bg-bottom", "bg-gray-900", "flex", "items-center", "banner-site");
-header.innerHTML = compHeader;
+header.classList.add("w-full", "m-0", "p-0", "bg-cover", "bg-bottom", "bg-gray-900", "flex", "items-center", "overflow-hidden", "banner-site");
+header.insertAdjacentHTML('beforeEnd', compHeader);
 
 
 
 const nav = document.getElementById("navigation");
 nav.classList.add("mt-0", "w-full");
-nav.innerHTML = compNav;
+nav.insertAdjacentHTML('beforeEnd', compNav);
 
 
 
@@ -55,24 +51,20 @@ window.onhashchange = () => {
 }
 
 
-document.body.insertAdjacentHTML('beforeEnd', compModalShare);
-
-
 const contactbox = document.getElementById("contactbox");
 contactbox.classList.add("w-full", "font-sans", "bg-teal-100", "rounded", "mt-8", "px-8", "py-10", "md:p-24");
-contactbox.innerHTML = compContactBox;
+contactbox.insertAdjacentHTML('beforeEnd', compContactBox);
 
 
 
 const author = document.getElementById("author");
 author.classList.add("flex", "w-full", "items-start", "sm:items-center", "font-sans", "p-0", "sm:p-24", "flex-wrap", "my-10", "sm:my-0");
-author.innerHTML = compAuthor;
+author.insertAdjacentHTML('beforeEnd', compAuthor);
 
 
 
 const footer = document.getElementById("footer");
 footer.classList.add("bg-gray-900");
-footer.innerHTML = compFooter;
+footer.insertAdjacentHTML('beforeEnd', compFooter);
 
-
-eva.replace();
+document.body.insertAdjacentHTML('beforeEnd', compModalShare);

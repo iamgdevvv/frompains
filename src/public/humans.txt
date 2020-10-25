@@ -1,0 +1,14 @@
+/* TEAM */
+Your title: Iamgdev
+Site: https://iamgdev.web.app
+Twitter: grafisz
+Location: Pekanbaru, Indonesia
+
+/* THANKS */
+Name: https://programming-quotes-api.herokuapp.com
+
+/* SITE */
+Last update: 2020/10/25
+Standards: HTML5, CSS3, JS
+Components: Tailwind CSS
+Software: NodeJS, Webpack, VSCode

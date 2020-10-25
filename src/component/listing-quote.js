@@ -1,9 +1,7 @@
-import * as eva from 'eva-icons';
-import DataQuote from './lib/quote-data';
+import DataQuote from '../global/quote-data';
 
-import pagination from '../assets/js/pagination';
-import modalShare from './modal-share';
-import funcModal from '../assets/js/modal';
+import pagination from '../library/pagination';
+import funcModal from '../library/modal';
 
 class listingQuote extends HTMLElement {
 
@@ -35,7 +33,7 @@ class listingQuote extends HTMLElement {
                             <p class="text-gray-600" id="rate-${results.id}">Popularity: ${results.rating}</p>
                         </div>
                         <button data-id=${results.id} class="absolute w-10 h-10 rounded-full p-2 border-2 bg-gray-100 bottom-0 right-0 mb-6 mr-6 modal-open">
-                            <i data-eva="share" class="w-full h-full fill-current"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="w-full h-full fill-current"><g data-name="Layer 2"><g data-name="share"><rect width="24" height="24" opacity="0"></rect><path d="M18 15a3 3 0 0 0-2.1.86L8 12.34V12v-.33l7.9-3.53A3 3 0 1 0 15 6v.34L7.1 9.86a3 3 0 1 0 0 4.28l7.9 3.53V18a3 3 0 1 0 3-3z"></path></g></g></svg>
                         </button>
                     </div>`;
         } else {
@@ -58,14 +56,13 @@ class listingQuote extends HTMLElement {
                             <p class="text-gray-600" id="rate-${results[i].id}">Popularity: ${results[i].rating}</p>
                         </div>
                         <button data-id=${results[i].id} class="absolute w-10 h-10 rounded-full p-2 border-2 bg-gray-100 bottom-0 right-0 mb-6 mr-6 modal-open">
-                            <i data-eva="share" class="w-full h-full fill-current"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="w-full h-full fill-current"><g data-name="Layer 2"><g data-name="share"><rect width="24" height="24" opacity="0"></rect><path d="M18 15a3 3 0 0 0-2.1.86L8 12.34V12v-.33l7.9-3.53A3 3 0 1 0 15 6v.34L7.1 9.86a3 3 0 1 0 0 4.28l7.9 3.53V18a3 3 0 1 0 3-3z"></path></g></g></svg>
                         </button>
                     </div>`;
             }    
         }
         
         this.innerHTML = quoteEl;
-        this.addEventListener("DOMContentLoaded", eva.replace());
         this.addEventListener("DOMContentLoaded", funcModal());
     }
 
