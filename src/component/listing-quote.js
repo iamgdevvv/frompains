@@ -20,6 +20,8 @@ class listingQuote extends HTMLElement {
         const pagingQuote = document.querySelector("pagination-quote");
         let results = await DataQuote.chooseQuote("https://programming-quotes-api.herokuapp.com/quotes/lang/en");
 
+        console.log(results);
+
         if(this.type === "random") {
             results = await results[Math.floor((Math.random()*results.length))];
             quoteEl += `
