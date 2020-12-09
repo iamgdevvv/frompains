@@ -1,8 +1,7 @@
 {
   "name": "frompains",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
@@ -17,7 +16,7 @@
     "@babel/preset-env": "^7.12.7",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^6.3.2",
+    "copy-webpack-plugin": "^6.4.0",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
     "html-webpack-partials-plugin": "^0.7.1",
@@ -32,7 +31,7 @@
     "webpack-bundle-analyzer": "^4.2.0",
     "webpack-cli": "^4.2.0",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.4.0",
+    "webpack-merge": "^5.4.1",
     "workbox-webpack-plugin": "^6.0.2"
   },
   "dependencies": {
