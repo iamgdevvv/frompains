@@ -1,8 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 const workboxPlugin = require('workbox-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
-const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin')
+// const AppManifestWebpackPlugin = require('app-manifest-webpack-plugin')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -51,6 +52,11 @@ module.exports = {
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
     }),
+    new HtmlWebpackPartialsPlugin({
+      path: path.resolve(__dirname, 'src/analytics.html'),
+      location: 'head',
+      priority: 'high'
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -83,38 +89,38 @@ module.exports = {
         handler: 'CacheFirst',
       }],
     }),
-    new AppManifestWebpackPlugin({
-      logo: path.resolve(__dirname, 'src/public/images/logo-favicon.png'),
-      prefix: '/',
-      output: '/manifest/',
-      emitStats: false,
-      statsEncodeHtml: false,
-      persistentCache: true,
-      inject: true,
-      config: {
-        appName: 'Frompains',
-        appDescription: 'Funny quotes for programmers base on their work.',
-        developerName: 'iamgdev',
-        developerURL: 'https://iamgdev.web.app/',
-        background: '#1a202c',
-        theme_color: '#1a202c',
-        display: 'standalone',
-        orientation: 'portrait',
-        start_url: '/',
-        version: '1.0',
-        logging: false,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: { offset: 25 },
-          favicons: true,
-          firefox: true,
-          windows: true,
-          yandex: true,
-        },
-      }
-    }),
+    // new AppManifestWebpackPlugin({
+    //   logo: path.resolve(__dirname, 'src/public/images/logo-favicon.png'),
+    //   prefix: '/',
+    //   output: '/manifest/',
+    //   emitStats: false,
+    //   statsEncodeHtml: false,
+    //   persistentCache: true,
+    //   inject: true,
+    //   config: {
+    //     appName: 'Frompains',
+    //     appDescription: 'Funny quotes for programmers base on their work.',
+    //     developerName: 'iamgdev',
+    //     developerURL: 'https://iamgdev.web.app/',
+    //     background: '#1a202c',
+    //     theme_color: '#1a202c',
+    //     display: 'standalone',
+    //     orientation: 'portrait',
+    //     start_url: '/',
+    //     version: '1.0',
+    //     logging: false,
+    //     icons: {
+    //       android: true,
+    //       appleIcon: true,
+    //       appleStartup: true,
+    //       coast: { offset: 25 },
+    //       favicons: true,
+    //       firefox: true,
+    //       windows: true,
+    //       yandex: true,
+    //     },
+    //   }
+    // }),
     new BundleAnalyzerPlugin(),
   ],
   optimization: {
